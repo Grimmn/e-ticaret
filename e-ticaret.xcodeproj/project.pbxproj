@@ -14,6 +14,12 @@
 		860DA52528E1B23D00AE7F24 /* e_ticaretTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA52428E1B23D00AE7F24 /* e_ticaretTests.swift */; };
 		860DA52F28E1B23D00AE7F24 /* e_ticaretUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA52E28E1B23D00AE7F24 /* e_ticaretUITests.swift */; };
 		860DA53128E1B23D00AE7F24 /* e_ticaretUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA53028E1B23D00AE7F24 /* e_ticaretUITestsLaunchTests.swift */; };
+		860DA54028E1B2A200AE7F24 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA53F28E1B2A200AE7F24 /* Home.swift */; };
+		860DA54228E1B76600AE7F24 /* TabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA54128E1B76600AE7F24 /* TabButton.swift */; };
+		860DA54428E1BAA800AE7F24 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA54328E1BAA800AE7F24 /* Item.swift */; };
+		860DA54628E1BC6F00AE7F24 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA54528E1BC6F00AE7F24 /* CardView.swift */; };
+		860DA54928E1C06400AE7F24 /* Detail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA54828E1C06400AE7F24 /* Detail.swift */; };
+		860DA54B28E1C74C00AE7F24 /* CustomShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 860DA54A28E1C74C00AE7F24 /* CustomShape.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,13 @@
 		860DA52A28E1B23D00AE7F24 /* e-ticaretUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "e-ticaretUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		860DA52E28E1B23D00AE7F24 /* e_ticaretUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_ticaretUITests.swift; sourceTree = "<group>"; };
 		860DA53028E1B23D00AE7F24 /* e_ticaretUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = e_ticaretUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		860DA53F28E1B2A200AE7F24 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		860DA54128E1B76600AE7F24 /* TabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabButton.swift; sourceTree = "<group>"; };
+		860DA54328E1BAA800AE7F24 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		860DA54528E1BC6F00AE7F24 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		860DA54728E1BCCD00AE7F24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		860DA54828E1C06400AE7F24 /* Detail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail.swift; sourceTree = "<group>"; };
+		860DA54A28E1C74C00AE7F24 /* CustomShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomShape.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +107,9 @@
 		860DA51228E1B23C00AE7F24 /* e-ticaret */ = {
 			isa = PBXGroup;
 			children = (
+				860DA54728E1BCCD00AE7F24 /* Info.plist */,
+				860DA53E28E1B28A00AE7F24 /* Model */,
+				860DA53D28E1B27B00AE7F24 /* View */,
 				860DA51328E1B23C00AE7F24 /* e_ticaretApp.swift */,
 				860DA51528E1B23C00AE7F24 /* ContentView.swift */,
 				860DA51728E1B23D00AE7F24 /* Assets.xcassets */,
@@ -125,6 +141,26 @@
 				860DA53028E1B23D00AE7F24 /* e_ticaretUITestsLaunchTests.swift */,
 			);
 			path = "e-ticaretUITests";
+			sourceTree = "<group>";
+		};
+		860DA53D28E1B27B00AE7F24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				860DA53F28E1B2A200AE7F24 /* Home.swift */,
+				860DA54128E1B76600AE7F24 /* TabButton.swift */,
+				860DA54528E1BC6F00AE7F24 /* CardView.swift */,
+				860DA54828E1C06400AE7F24 /* Detail.swift */,
+				860DA54A28E1C74C00AE7F24 /* CustomShape.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		860DA53E28E1B28A00AE7F24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				860DA54328E1BAA800AE7F24 /* Item.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +293,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				860DA54B28E1C74C00AE7F24 /* CustomShape.swift in Sources */,
+				860DA54428E1BAA800AE7F24 /* Item.swift in Sources */,
+				860DA54928E1C06400AE7F24 /* Detail.swift in Sources */,
 				860DA51628E1B23C00AE7F24 /* ContentView.swift in Sources */,
+				860DA54228E1B76600AE7F24 /* TabButton.swift in Sources */,
+				860DA54028E1B2A200AE7F24 /* Home.swift in Sources */,
+				860DA54628E1BC6F00AE7F24 /* CardView.swift in Sources */,
 				860DA51428E1B23C00AE7F24 /* e_ticaretApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,6 +462,7 @@
 				DEVELOPMENT_TEAM = TCM282M2P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "e-ticaret/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +492,7 @@
 				DEVELOPMENT_TEAM = TCM282M2P3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "e-ticaret/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
